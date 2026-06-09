@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # ══════════════════════════════════════════════════════════
-# Task 4 — Firewall Setup using UFW on Ubuntu Linux
-# ElevateLabs Cyber Security Internship
+# Firewall Setup using UFW on Ubuntu Linux
 # OS: Ubuntu 24.04 | Tool: UFW 0.36.1 | Platform: VirtualBox (NAT)
 # ══════════════════════════════════════════════════════════
 
