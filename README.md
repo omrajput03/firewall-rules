@@ -1,4 +1,4 @@
-# Task 4 — Setup and Use a Firewall on Linux
+# Setup and Use a Firewall on Linux
 
 ## Overview
 
@@ -101,38 +101,5 @@ firewall-rules/
 └── screenshots/          — Terminal screenshots of each step
 ```
 
----
 
-## Interview Q&A
 
-**1. What is a firewall?**  
-A firewall is a network security system that monitors and controls incoming and outgoing traffic based on predefined rules. It acts as a barrier between trusted internal networks and untrusted external ones.
-
-**2. Difference between stateful and stateless firewall?**  
-A *stateful* firewall tracks the state of active connections and can make decisions based on context (e.g., allowing reply traffic for an established session). A *stateless* firewall evaluates each packet independently against fixed rules, with no memory of past packets.
-
-**3. What are inbound and outbound rules?**  
-*Inbound rules* control traffic coming into the system. *Outbound rules* control traffic leaving the system. UFW's default is deny-inbound / allow-outbound.
-
-**4. How does UFW simplify firewall management?**  
-UFW provides a user-friendly command-line interface on top of `iptables`, which has complex syntax. UFW abstracts low-level iptables commands into simple directives like `ufw allow 22/tcp`.
-
-**5. Why block port 23 (Telnet)?**  
-Telnet sends all data including passwords in cleartext. It is a legacy protocol with no encryption, making it a serious security risk. SSH (port 22) is its secure replacement.
-
-**6. What are common firewall mistakes?**  
-- Setting default-allow instead of default-deny  
-- Leaving unused ports open  
-- Not logging dropped packets  
-- Forgetting IPv6 rules alongside IPv4  
-- Over-permissive outbound rules  
-
-**7. How does a firewall improve network security?**  
-It reduces the attack surface by blocking unauthorized access, prevents port scanning results from being useful, limits blast radius of compromises, and can rate-limit brute-force attempts.
-
-**8. What is NAT in firewalls?**  
-NAT (Network Address Translation) maps private internal IP addresses to a public IP. Firewalls often perform NAT to allow multiple internal hosts to share one public IP, while also hiding internal network topology from the outside.
-
----
-
-*ElevateLabs Cyber Security Internship — Task 4*
